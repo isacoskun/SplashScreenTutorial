@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SplashActivity"
+    android:background="@color/splash_bg_color">
+
+    <ImageView
+        android:id="@+id/splashView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_screen"
+        android:scaleType="center"
+        android:layout_alignParentBottom="true"/>
+
+    <com.splash.screen.yt.Classess.TypeWriter
+        android:id="@+id/splashText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignTop="@+id/splashView"
+        android:textSize="50sp"
+        android:maxLines="2"
+        android:gravity="center"
+        android:fontFamily="@font/teachersignature"
+        android:textColor="@color/default_text_color"/>
+
+</RelativeLayout>
